@@ -1,0 +1,125 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f6f8;
+  margin: 0;
+  padding: 20px;
+  position: relative;
+}
+
+.collapse-container {
+  border: 2px solid gray;
+  padding: 10px;
+  background-color: #c2c2c2;
+  max-width: 450px;
+}
+
+.collapse-button {
+  padding: 10px 12px;
+  width: 150px;
+
+  border: none;
+  border-radius: 10px;
+
+  background: #2d7ef7;
+  color: white;
+
+  font-size: 14px;
+  cursor: pointer;
+
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.collapse-button:hover {
+  outline: 2px solid black;
+}
+
+.collapse-text {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 1s;
+}
+
+.main-text {
+  border: 1px solid gray;
+  padding: 15px;
+}
+
+.form-button {
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  background-color: red;
+  position: absolute;
+  top: 500px;
+  left: 450px;
+
+  transition: opacity 0.1s linear, transform 0.1s linear;
+  opacity: 1;
+  cursor: pointer;
+}
+
+.form-button:hover {
+  transform: scale(1.2);
+}
+
+.form-button.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 300px;
+  position: absolute;
+  background-color: #c2c2c2;
+  padding: 20px;
+
+  top: 300px;
+  left: 100px;
+
+  border-radius: 8px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.1s linear, transform 0.1s linear;
+  transform: scale(0.8);
+}
+
+form.visible {
+  opacity: 1;
+  pointer-events: auto;
+  transform: scale(1);
+}
+
+textarea {
+  height: 120px;
+  resize: none;
+}
+
+.close {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+}
+
+.like-container {
+  padding: 10px 12px;
+  width: 100px;
+
+  border: none;
+  border-radius: 10px;
+
+  background: red;
+  color: white;
+
+  font-size: 14px;
+  cursor: pointer;
+
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+  margin-left: 500px;
+  margin-top: 250px;
+}
