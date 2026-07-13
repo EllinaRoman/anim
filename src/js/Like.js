@@ -38,7 +38,7 @@ class Like {
           { transform: `translate(${finalWay[4]}px, -200px)`, opacity: 0 },
         ],
         {
-          duration: 1000,
+          duration: 500,
           easing: 'ease-out',
         },
       );
